@@ -14,7 +14,7 @@ public class Program {
 
   private Program(){
 
-    teilnehmerFile = new File("src/main/resources/Teilnehmer.txt");
+    teilnehmerFile = new File("Teilnehmer.txt");
 
     mainFrame = new JFrame("Report Generator");
     mainWindowForm = new MainWindowForm();
@@ -22,7 +22,7 @@ public class Program {
 
     mainFrame.setContentPane(mainWindowForm.getMainPanel());
     mainFrame.setSize(800,600);
-    mainFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+    mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     positionFrame();
 
     setupButtons();
